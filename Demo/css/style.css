@@ -3,11 +3,13 @@ syntax for general css
 */
 
 body {
-    background-color: aquamarine;
+     background-color: aquamarine;
+    /*background-image: url("../assets/images/ou.png"); */
+    background-repeat: no-repeat;
 }
 
 #primary-heading {
-color: blue;
+color: var(--primary-background-color)
 border: 10px solid red; 
 border-radius: 5px;
 padding: 15px;
@@ -22,6 +24,9 @@ margin: 50px;
 *{
     padding: 0;
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    /* how to declare and use CSS variables */
+    --primary-background-color: #3B32ED;
 }
 
 /* tutorial for laying out elements out on the html document 
@@ -37,8 +42,54 @@ padding: 10px;
 .section-title {
  padding: 10px;
  margin-bottom: 20px; /*seperate next child vertically from this one*/
+ width: 100%; /*max-width, min width, Same from height property*/
+}
+
+.section-title-text {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(216, 190, 56);
 }
 
 .wrapper {
-
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+     /*flex-grow and flex-shrink*/
 }
+
+.news-container {
+    border: 1px solid rgb(142, 124, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-media {
+    width: 150px;
+    max-width: 100px;
+    height: 150px;
+    max-height: 100px;
+    margin-bottom: 45px;
+}
+
+.news-images {
+    width:150px;
+    height: 150px;
+    padding: 5px;
+}
+
+.news-text > a > h3{
+    padding: 10px;
+    color: rgb(51, 49, 4);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
