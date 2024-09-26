@@ -1,0 +1,44 @@
+/*this is a comment in .css file 
+syntax for general css
+*/
+
+body {
+    background-color: aquamarine;
+}
+
+#primary-heading {
+color: blue;
+border: 10px solid red; 
+border-radius: 5px;
+padding: 15px;
+margin: 50px;
+}
+
+.heading-group {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* '*' means applies all elements */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* tutorial for laying out elements out on the html document 
+   replicating the news subsection on the oakland.edu webpage
+*/
+
+/*root node of the section*/
+.news-events {
+padding: 10px;
+}
+
+/*immediate child of root node */
+.section-title {
+ padding: 10px;
+ margin-bottom: 20px; /*seperate next child vertically from this one*/
+}
+
+.wrapper {
+
+}
