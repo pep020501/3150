@@ -5,7 +5,7 @@ syntax for general css
 body {
      background-color: aquamarine;
     /*background-image: url("../assets/images/ou.png"); */
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
 }
 
 #primary-heading {
